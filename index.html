@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="getdates.js"></script>
 </head>
 <body>
     <header>
@@ -26,19 +27,30 @@
     <main>
         <section class="card">
             <h2>About Me</h2>
-            <p>
-                I live in Toronto, Canada, with my wife and my five years old daughter.
-                I am a marketing campaign specialist. I work as a specialist in HubSpot CRM,
-                creating, managing campaigns, and also I create websites for digital marketing.
-            </p>
-            <img src="images/profile.png" alt="Adson Mettler profile photo" width="150">
-            <h3>Toronto, Canada</h3>
-            <p>
-                Imagine a place with a mix of cultures, languages, and endless things to do.
-                Toronto is like a dynamic fusion of modern and traditional, with iconic landmarks
-                like the CN Tower and a food scene that's out of this world. It's a lively
-                experience that captures the heart of Canada's diversity and opportunity. 
-            </p>
+            <div class="card-content">
+                <div class="text">
+                    <p>
+                        I live in Toronto, Canada, with my wife and my five years old daughter.
+                        I am a marketing campaign specialist. I work as a specialist in HubSpot CRM,
+                        creating, managing campaigns, and also I create websites for digital marketing.
+                    </p>
+                    <h3>Toronto, Canada</h3>
+                    <p>
+                        Imagine a place with a mix of cultures, languages, and endless things to do.
+                        Toronto is like a dynamic fusion of modern and traditional, with iconic landmarks
+                        like the CN Tower and a food scene that's out of this world. It's a lively
+                        experience that captures the heart of Canada's diversity and opportunity. 
+                    </p>
+                </div>
+                <div class="images">
+                    <div class="image">
+                        <img src="images/profile.png" alt="Adson Mettler profile photo" width="150">
+                    </div>
+                    <div class="image">
+                        <img src="images/Canada, Toronto.jpeg" alt="Toronto skyline" width="150">
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="card">
             <h2>Web Dev Resources</h2>
@@ -54,7 +66,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; <span id="currentyear"></span> Adson Mettler do Nascimento | Toronto, Canada</p>
+        <p id="#year"></p>
         <p>"lastModified"</p>
     </footer>
 </body>
