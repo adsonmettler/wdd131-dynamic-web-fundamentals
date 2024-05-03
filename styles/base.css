@@ -2,7 +2,6 @@
 
 
 
-
 * {
 	margin: 0;
 	padding: 0;
@@ -179,6 +178,10 @@ main {
     margin-left: 2px;
     border-radius: 8px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.link a:hover {
+    color: yellow;
 }
 
 .card-content p {
