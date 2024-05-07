@@ -1,0 +1,81 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (min-width: 500px) {
+    header, main, footer {
+	max-width: 1920px;
+	margin: 0 auto;
+    }
+
+    .hero source {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    
+    h1 {
+        margin-top: -20px;
+        font-size: 40px;
+    }
+
+    nav {
+        padding-bottom: 10px;
+    }
+
+    .content-container {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .flexbox-item-1 {
+        position: absolute;
+        top: -800px;
+        left: 50px;
+        width: 20%;
+        background-color: rgba(255, 251, 208, 0.9);
+        border: none;
+    }
+
+    .flexbox-item-2 {
+        position: absolute;
+        bottom: 100px;
+        right: 50px;
+        width: 20%;
+        background-color: rgba(255, 251, 208, 0.9);
+        border: none;
+    }
+
+    .image-weather {
+        display: none;
+    }
+
+    .after::after {
+        content: " ⛅";
+        position: absolute;
+        left: 220px;
+        top: 25px;
+    }
+
+    h2 {
+        width: 300px;
+        background-color: var(--colorPrimary);
+        margin-left: -10px;
+        color: white;
+    }
+
+    footer {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-top: -5px;
+    }
+
+    
+}

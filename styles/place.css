@@ -44,7 +44,7 @@ nav {
 
   /* MAIN */
 
-.flexbox-item {
+.flexbox-item-1, .flexbox-item-2 {
     padding-bottom: 40px;
     border: 1px solid #cccccc;
     margin-top: -10px;
