@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place</title>
+    <meta name="author" content="Adson Mettler do Nascimento">
+    <meta name="description" content="This page is dedicated to design a page to use responsive images, and JavaScrip functions">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script defer src="scripts/place.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Alberta</h1>
+        <nav>
+            <div class="image-logo">
+                <img src="images/flag_of_alberta.svg" alt="Flag of Alberta" width="150">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/alberta-horizontal.webp" media="(min-width: 500px)">
+                <img src="images/alberta-vertical.webp" alt="Banff landscape in Alberta, Canada" width="500">
+            </picture>
+        </div>
+        <div class="flexbox-item">
+            <h2>Data</h2>
+            <div class="label-container-1">
+                <div class="data-item">
+                    <span class="label">Area:</span>
+                    <span class="value">661,848 sq km</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Population:</span>
+                    <span class="value">4.4 million</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Capital:</span>
+                    <span class="value">Edmonton</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Language:</span>
+                    <span class="value">English, French</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Currency:</span>
+                    <span class="value">Canadian Dollar</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Time Zone:</span>
+                    <span class="value">UTC -7</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Calling Code:</span>
+                    <span class="value">+1 403</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Internet TDL:</span>
+                    <span class="value">.ca</span>
+                </div>
+            </div>
+        </div>
+        <div class="flexbox-item">
+            <h2>Weather</h2>
+            <div class="image-weather">
+                <img src="images/1530391_weather_clouds_sun_sunny_icon.svg" alt="weather sunny icon" width="150">
+            </div>
+            <div class="label-container-1">
+                <div class="data-item">
+                    <span class="label">Temperature:</span>
+                    <span class="value">9℃</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Conditions:</span>
+                    <span class="value">Partly Cloudy</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Wind:</span>
+                    <span class="value">50 km/h</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Wind Chill:</span>
+                    <span class="value">6℃</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p id="year">&copy; <span class="highlight">YYYY</span> Adson Mettler do Nascimento | Toronto, Canada</p>
+        <p id="lastModifiedDate" class="highlight">Last modified: </p>
+    </footer>
+</body>
+</html>
