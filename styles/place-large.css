@@ -8,7 +8,7 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 1000px) {
     header, main, footer {
 	max-width: 1920px;
 	margin: 0 auto;
@@ -33,9 +33,10 @@ body {
         position: relative;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
 
-    .flexbox-item-1 {
+    /* .flexbox-item-1 {
         position: absolute;
         top: -800px;
         left: 50px;
@@ -51,7 +52,18 @@ body {
         width: 20%;
         background-color: rgba(255, 251, 208, 0.9);
         border: none;
+    } */
+
+    .flexbox-item-1,
+    .flexbox-item-2 {
+        width: 20%;
+        height: auto;
+        background-color: rgba(255, 251, 208, 0.9);
+        border: none;
+        min-width: 300px;
+        min-height: 100px;
     }
+
 
     .image-weather {
         display: none;
@@ -59,16 +71,30 @@ body {
 
     .after::after {
         content: " ⛅";
-        position: absolute;
-        left: 220px;
-        top: 25px;
+        position: relative;
+        left: 140px;
+        top: -32px;
+        margin-bottom: -30px;
     }
 
     h2 {
-        width: 300px;
+        width: 100%;
         background-color: var(--colorPrimary);
         margin-left: -10px;
         color: white;
+    }
+
+     /* Positioning for flexbox items */
+     .flexbox-item-1 {
+        position: absolute;
+        top: -700px; /* Adjust top position */
+        left: 80px; /* Adjust left position */
+    }
+
+    .flexbox-item-2 {
+        position: absolute;
+        bottom: 80px; /* Adjust bottom position */
+        right: 80px; /* Adjust right position */
     }
 
     footer {
@@ -76,6 +102,5 @@ body {
         padding-bottom: 40px;
         margin-top: -5px;
     }
-
     
 }
