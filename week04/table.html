@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table | HTML</title>
+    <meta name="author" content="Adson Mettler do Nascimento">
+    <meta name="description" content="This is a simple table page made using HTML and CSS, for practice">
+    <link rel="stylesheet" href="styles/table.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <table>
+        <caption>Table 1: Account Feature Comparison</caption>
+        <thead>
+            <tr>
+                <th id="services" colspan="4" scope="colgroup">ACME Wildwest Services</th>
+            </tr>
+            <tr class="second-header">
+                <th class="blank"></th>
+                <th id="basic" scope="col">Basic</th>
+                <th id="premium" scope="col">Premium</th>
+                <th id="delux" scope="col">Delux</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th id="feature1" scope="row">Feature 1</th>
+                <td headers="feature1 service basic">✔️</td>
+                <td headers="feature1 service premium">✔️</td>
+                <td headers="feature1 service delux">✔️</td>
+            </tr>
+            <tr>
+                <th id="feature2" scope="row">Feature 2</th>
+                <td headers="feature2 service basic">❌</td>
+                <td headers="feature2 service premium">✔️</td>
+                <td headers="feature2 service delux">✔️</td>
+            </tr>
+            <tr>
+                <th id="feature3" scope="row">Feature 3</th>
+                <td headers="feature3 service basic">❌</td>
+                <td headers="feature3 service premium">❌</td>
+                <td headers="feature3 service delux">✔️</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
