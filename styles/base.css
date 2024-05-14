@@ -153,6 +153,7 @@ main .hero {
 .hero .button:hover {
     background-color: #032240;
     color: aqua;
+    box-shadow: 0 0 7px aqua;
 }
 
 
