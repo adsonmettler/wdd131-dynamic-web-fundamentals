@@ -121,7 +121,7 @@ const temples = [
         imageUrl:
         "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/calgary-alberta/400x250/calgary-alberta-temple-lds-1025065-wallpaper.jpg"
       },
-    // Add more temple objects here...
+    // Add more temple objects here
   ];
 
 
