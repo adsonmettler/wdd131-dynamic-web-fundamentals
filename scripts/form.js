@@ -28,58 +28,52 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-// PRODUCT ARRAY
-
+// Product array with corrected id field quotes
 const products = [
     {
-      id: fc-1888,
+      id: "fc-1888",
       name: "flux capacitor",
-      avg-rating: 4.5
+      avgRating: 4.5
     },
     {
-      id: fc-2050,
+      id: "fc-2050",
       name: "power laces",
-      averagerating: 4.7
+      avgRating: 4.7
     },
     {
-      id: fs-1987,
+      id: "fs-1987",
       name: "time circuits",
-      averagerating: 3.5
+      avgRating: 3.5
     },
     {
-      id: ac-2000,
+      id: "ac-2000",
       name: "low voltage reactor",
-      averagerating: 3.9
+      avgRating: 3.9
     },
     {
-      id: jj-1969,
+      id: "jj-1969",
       name: "warp equalizer",
-      averagerating: 5.0
+      avgRating: 5.0
     }
   ];
-
-
-
-  // Handle form submission to track review count
-const form = document.querySelector('form.wf1');
-form.addEventListener('submit', function(event) {
-    event.preventDefault();  // Prevent the default form submission
-      
+  
+  document.addEventListener("DOMContentLoaded", function() {
+    // Populate the product dropdown
+    const productSelect = document.querySelector('select[name="product"]');
+    products.forEach(product => {
+      const option = document.createElement('option');
+      option.value = product.id;
+      option.textContent = product.name;
+      productSelect.appendChild(option);
+    });
+  
+    // Handle form submission
+    const form = document.querySelector('form.wf1');
+    form.addEventListener('submit', function(event) {
       // Increment the review counter in localStorage
-    let reviewCount = localStorage.getItem('reviewCount');
-    reviewCount = reviewCount ? parseInt(reviewCount) + 1 : 1;
-    localStorage.setItem('reviewCount', reviewCount);
-
-      // Optionally display a message to the user
-    alert(`Thank you for your review! You have submitted ${reviewCount} reviews.`);
-
-      // Optionally, submit the form data using AJAX if needed
-      // For now, just reset the form
-    form.reset();
+      let reviewCount = localStorage.getItem('reviewCount') || 0;
+      reviewCount = parseInt(reviewCount) + 1;
+      localStorage.setItem('reviewCount', reviewCount);
+    });
   });
-});
-
-// Function to get the current year
-function getCurrentYear() {
-  return new Date().getFullYear();
-}
+  
