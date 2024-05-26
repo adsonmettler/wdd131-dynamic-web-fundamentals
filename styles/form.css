@@ -46,7 +46,7 @@ main {
     font-size: 12px;
 }
 
-.wf1 div {
+.wf1 label {
     padding-top: 1rem;
     color: #367b92;
     font-size: 14px;
@@ -54,7 +54,6 @@ main {
 }
 
 
-.wf1 input[type="text"],
 .wf1 input[type="date"],
 .wf1 select
 {
@@ -71,7 +70,8 @@ main {
     margin-bottom: 10px;
 }
 
-.wf1 input[type="textarea"]
+
+.wf1 input[type="text"]
 {
     background-color: #eee;
     display: block;
@@ -80,7 +80,23 @@ main {
     padding: .75rem;
     color: #555;
     width: 100%;
-    max-width: 200px;
+    max-width: 300px;
+    appearance: none;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+.wf1 textarea[type="textarea"]
+{
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 300px;
     appearance: none;
     margin-top: 5px;
     margin-bottom: 10px;
@@ -123,7 +139,7 @@ main {
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: left;
-    margin-top: -25px;
+    margin-top: -20px;
     margin-bottom: 10px;
 }
 
