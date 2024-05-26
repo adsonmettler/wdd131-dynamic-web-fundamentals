@@ -64,7 +64,7 @@ main {
 }
 
 
-.wf1 input[type="textarea"]
+.wf1 textarea[type="textarea"]
 {
     background-color: #eee;
     display: block;
@@ -80,7 +80,8 @@ main {
 }
 
 
-.wf1 input[type="submit"]{
+.wf1 input[type="submit"]
+{
     border: none;
     background-image: linear-gradient(#f59432, #bc5e00);
     color: #fff;
