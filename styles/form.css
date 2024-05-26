@@ -87,7 +87,7 @@ main {
 }
 
 
-.wf1 textarea[type="textarea"]
+.wf1 textarea
 {
     background-color: #eee;
     display: block;
