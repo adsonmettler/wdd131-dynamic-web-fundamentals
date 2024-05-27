@@ -27,6 +27,9 @@ main {
     font-family: "Montserrat", sans-serif;
 }
 
+.thanks-page {
+    text-align: center;
+}
 
 /*----------- FORM STYLING --------------*/
 
@@ -119,11 +122,11 @@ main {
     box-shadow: 1px 1px 4px #999;
 }
 
-.wf1 input:required {
+.wf1 label input:required {
     border-left: solid 6px #f53232;
 }
 
-.wf1 input:required:valid {
+.wf1 label input:required:valid {
     border-left: solid 6px #367b92;
 }
 
