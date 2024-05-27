@@ -1,0 +1,60 @@
+:root {
+	--primary-color: #367b92;
+  --secondary-color: #6eb0c8;
+  --accent1-color: #f59432;
+	--accent2-color: #ffffff;
+	--accent3-color: #06232d;
+}
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+
+@media screen and (min-width: 640px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: white;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 30px #333;
+        background-color: var(--primary-color);
+    }
+
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+
+
+    .navigation {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    li {
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    nav a {
+        flex: 1 1 100% ;
+        padding-left: 40px;
+    }
+
+
+
+
+
+}

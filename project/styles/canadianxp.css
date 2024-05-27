@@ -1,0 +1,149 @@
+:root {
+	--primary-color: #367b92;
+  --secondary-color: #6eb0c8;
+  --accent1-color: #f59432;
+	--accent2-color: #ffffff;
+	--accent3-color: #06232d;
+}
+
+
+/*----------- BODY --------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", Arial, sans-serif;
+    background-color: var(--accent3-color);
+}
+
+header, main {
+    margin: auto;
+}
+
+
+/*----------- HEADER --------------*/
+
+header {
+    background-color: var(--primary-color);
+    display: grid;
+    grid-gap: 1rem;
+    padding-left: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 30px #333;
+    color: white;
+}
+
+header, main {
+    margin: auto;
+}
+
+.navigation {
+    display: none;
+}
+
+/* Small view navigation and BUTTON hamburguer menu */
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: white;
+ 	position: absolute;
+    top: 1.4rem;
+    right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.navigation.open {
+	display: block;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--accent2-color);
+    font-weight: 800;
+    background: var(--accent1-color);
+}
+
+
+/*----------- MAIN --------------*/
+
+/*----------- HERO SECTION --------------*/
+
+.hero-content h2 {
+    color: var(--accent2-color);
+    text-align: center;
+    font-weight: 900;
+    font-size: 36px;
+    margin-top: -100px;
+    padding: 25px;
+}
+
+.hero-content p {
+    color: var(--accent2-color);
+    text-align: center;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.flexbox-button a {
+    display: block;
+    text-decoration: none;
+    color: var(--accent2-color);
+    background-color: var(--accent1-color);
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    margin: 40px;
+    font-weight: 800;
+    margin-top: -20px;
+}
+
+
+.hero-content img {
+    max-width: 400px;
+}
+
+
+/*----------- CARDS SECTION --------------*/
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 10px;
+}
+
+
+/*----------- FOOTER --------------*/
