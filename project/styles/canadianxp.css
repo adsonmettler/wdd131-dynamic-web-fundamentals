@@ -48,7 +48,9 @@ header, main {
 /* Small view navigation and BUTTON hamburguer menu */
 
 #menu {
-	font-size: 1.5rem;
+	font-size: 1.4rem;
+    font-family: "Montserrat";
+    font-weight: 300;
 	border: 0;
 	background: none;
 	color: white;
@@ -102,7 +104,7 @@ nav a:hover {
     color: var(--accent2-color);
     text-align: center;
     font-weight: 900;
-    font-size: 36px;
+    font-size: 34px;
     margin-top: -100px;
     padding: 25px;
 }
