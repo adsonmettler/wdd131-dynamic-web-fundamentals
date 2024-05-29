@@ -26,3 +26,16 @@ document.addEventListener("DOMContentLoaded", function() {
         modifiedParagraph.textContent = "Last modified: " + lastModifiedDate;
     }
 });
+
+
+// HAMBURGER MENU funciton //
+
+document.addEventListener('DOMContentLoaded', function() {
+    const menuButton = document.getElementById('menu');
+    const navigation = document.querySelector('nav .navigation');
+
+    menuButton.addEventListener('click', function() {
+        menuButton.classList.toggle('open');
+        navigation.classList.toggle('open');
+    });
+});
