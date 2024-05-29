@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form | Canadian XP</title>
+    <meta name="description" content="This website is dedicated to the learning process for the course WDD 131 - Dynamic Web Fundamentals. This website development project focuses on creating a site for a hypothetical tourism company in Canada. The goal of the website is to showcase the trip packages the company offers and highlight the main famous tourist spots covered by the company in Canada.">
+    <meta name="author" content="Adson Mettler do Nascimento">
+    <link rel="stylesheet" href="styles/canadianxp.css">
+    <link rel="stylesheet" href="styles/canadianxp-large.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script defer src="scripts/canadianxp.js"></script>
+    <script defer src="scripts/form.js"></script>
+</head>
+<body>
+    <header>
+        <!-- NAVIGATION -->
+        <div class="image-logo">
+            <img src="images/canadianxp-logo-2.png" alt="logomarca Adson" width="70">
+        </div>
+        <button id="menu"> Menu</button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#home" id="home">Home</a></li>
+                <li><a href="#old" id="old">Trips</a></li>
+                <li><a href="#new" id="new" class="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Contact Form -->
+        <form method="get" action="review.html" class="wf1">
+            <h2>Book Your Experience</h2>
+            <fieldset>
+
+             <label>Product Name 
+                 <select name="product" required>
+                 <option value="">Select a Product &#9662;</option>
+
+                  </select>
+                 </label>
+
+             <!-- STARS RATING -->
+
+             <label>Overall Rating</label>
+             <div class="stars">
+                 <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                 <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                 <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+                 <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+                 <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+             </div>
+
+             <label>Date of Installation <input type="date" name="completeDate" required></label>
+
+             <label>Which features did you find useful in the product? (Check all that apply)</label>
+                <label><input type="checkbox" id="durability" name="features" value="yes"> Durability</label>
+                <label><input type="checkbox" id="usability" name="features" value="yes"> Ease of Use</label>
+                <label><input type="checkbox" id="performance" name="features" value="yes"> Performance</label>
+                <label><input type="checkbox" id="design" name="features" value="yes"> Design</label>
+
+             <label>Written Review (Optional) <textarea id="comment" name="comment"></textarea></label>
+             
+             <label>Your Name (Optional) <input type="text" id="name" name="fname"></label>
+                
+            </fieldset>
+
+            <!-- BUTTON -->
+
+            <input type="submit" value="Post Review">
+        
+        </form>
+
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <p id="year">&copy; <span class="highlight">YYYY</span> Adson Mettler do Nascimento | Toronto, Canada</p>
+        <p id="lastModifiedDate" class="highlight">Last modified: </p>
+    </footer>
+</body>
+</html>
