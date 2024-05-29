@@ -1,30 +1,37 @@
+// Author: Adson Mettler do Nascimento
+
 // Product array with corrected id field quotes
 const products = [
     {
-      id: "fc-1888",
-      name: "flux capacitor",
+      id: "bn-001",
+      name: "Banff Route",
       avgRating: 4.5
     },
     {
-      id: "fc-2050",
-      name: "power laces",
+      id: "vc-001",
+      name: "Vancouver Route",
       avgRating: 4.7
     },
     {
-      id: "fs-1987",
-      name: "time circuits",
+      id: "tr-001",
+      name: "Toronto Route",
       avgRating: 3.5
     },
     {
-      id: "ac-2000",
-      name: "low voltage reactor",
+      id: "nf-001",
+      name: "Niagara Falls Route",
       avgRating: 3.9
     },
     {
-      id: "jj-1969",
-      name: "warp equalizer",
+      id: "oq-001",
+      name: "Old Quebec Route",
       avgRating: 5.0
-    }
+    },
+    {
+        id: "bf-001",
+        name: "Bay of Fundy Route",
+        avgRating: 5.0
+      }
   ];
   
   document.addEventListener("DOMContentLoaded", function() {
