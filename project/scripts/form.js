@@ -35,13 +35,13 @@ const products = [
   ];
   
   document.addEventListener("DOMContentLoaded", function() {
-    // Populate the product dropdown
-    const productSelect = document.querySelector('select[name="product"]');
-    products.forEach(product => {
+    // Populate the trip route dropdown
+    const routeSelect = document.querySelector('select[name="route"]');
+    routes.forEach(route => {
       const option = document.createElement('option');
-      option.value = product.id;
-      option.textContent = product.name;
-      productSelect.appendChild(option);
+      option.value = route.id;
+      option.textContent = route.name;
+      routeSelect.appendChild(option);
     });
   
     // Handle form submission

@@ -77,3 +77,40 @@ const products = [
     });
   });
   
+
+  document.addEventListener("DOMContentLoaded", function() {
+    // Existing code to update the current year and last modified date
+    var yearSpan = document.querySelector("#year span.highlight");
+    if (yearSpan) {
+        yearSpan.textContent = getCurrentYear();
+    }
+
+    var lastModifiedDate = document.lastModified;
+    var modifiedParagraph = document.querySelector("footer p:nth-of-type(2)");
+    if (modifiedParagraph) {
+        modifiedParagraph.textContent = "Last modified: " + lastModifiedDate;
+    }
+
+    // Handle form submission to track review count
+    const form = document.querySelector('form.wf1');
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();  // Prevent the default form submission
+        
+        // Increment the review counter in localStorage
+        let reviewCount = localStorage.getItem('reviewCount');
+        reviewCount = reviewCount ? parseInt(reviewCount) + 1 : 1;
+        localStorage.setItem('reviewCount', reviewCount);
+
+        // Optionally display a message to the user
+        alert(`Thank you for your review! You have submitted ${reviewCount} reviews.`);
+
+        // Optionally, submit the form data using AJAX if needed
+        // For now, just reset the form
+        form.reset();
+    });
+});
+
+// Function to get the current year
+function getCurrentYear() {
+    return new Date().getFullYear();
+}

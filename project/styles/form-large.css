@@ -1,10 +1,7 @@
 /* 64em is also 1028px (if basefont is 16px) */
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 640px) {
 
-    header, main, footer {
-        max-width: 64rem;
-        margin:auto;
-    }
+    
 
 /*----------- BODY --------------*/
 
@@ -13,7 +10,7 @@
 /*----------- HEADER --------------*/
 
 header {
-    max-width: 500px;
+    max-width: 100%;
 }
 
 /*----------- MAIN --------------*/
@@ -102,7 +99,7 @@ footer {
     text-align: center;
     color: #000;
     font-size: 14px;
-    max-width: 500px;
+    max-width: 100%;
 }
 
 
