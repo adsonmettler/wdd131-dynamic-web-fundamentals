@@ -133,11 +133,19 @@ nav a {
     font-weight: 800;
     margin-top: -20px;
     font-size: 16px;
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.hero-content a:hover {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
 }
 
 
-.hero-content img {
-    max-width: 420px;
+.hero-content .hero-img1 {
+    max-width: 100%;
 }
 
 
