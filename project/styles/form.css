@@ -48,18 +48,14 @@ h2 {
 }
 
 
+
+
 .wf1 label {
     display: block;
     padding-top: 1rem;
-    color: black;
-    font-size: 12px;
-}
-
-.wf1 label {
-    padding-top: 1rem;
     color: #367b92;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 25px;
 }
 

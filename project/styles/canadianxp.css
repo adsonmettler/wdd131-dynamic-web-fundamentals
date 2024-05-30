@@ -265,6 +265,8 @@ nav a {
     transition: transform 0.3s ease-in-out; /* Smooth transition */
 }
 
+
+
 .card-content .button-1:hover {
     background-color: var(--primary-color);
     color: var(--accent2-color);
