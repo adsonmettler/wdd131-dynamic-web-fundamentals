@@ -24,6 +24,9 @@ main {
     display: block;
 }
 
+h2 {
+    font-size: 44px;
+}
 
 .wf1 input[type="date"],
 .wf1 select,
