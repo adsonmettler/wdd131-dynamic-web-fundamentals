@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 { name: "DoubleTree Fallsview Resort & Spa by Hilton", description: "Comfortable" },
                 { name: "Country Inn & Suites by Radisson", description: "Affordable" }
             ],
-            image: "images/niagara-falls-1-card-2x3.png",
+            image: "images/niagara-falls-1-card-2x3.webp",
             type: "outdoor"
         },
         {
@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 { name: "Fairmont Le Château Frontenac", description: "Breathtaking views of the St. Lawrence River" },
                 { name: "Hotel Manoir Victoria", description: "Central location" }
             ],
-            image: "images/old-quebec-2-card-2x3.png",
+            image: "images/old-quebec-2-card-2x3.webp",
             type: "indoor"
         },
         {
@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 { name: "Digby Pines Golf Resort and Spa", description: "Located close to whale-watching tours" },
                 { name: "Fundy Complex Dockside Suites", description: "Affordable, cozy accommodations" }
             ],
-            image: "images/bay-of-fundy-card-2x3.png",
+            image: "images/bay-of-fundy-card-2x3.webp",
             type: "outdoor"
         }
     ];
