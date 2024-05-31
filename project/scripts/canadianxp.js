@@ -1,4 +1,3 @@
-
 // JavaScript function to get the current year
 // Author: Adson Mettler do Nascimento
 
@@ -11,10 +10,9 @@ function getCurrentYear() {
 document.addEventListener("DOMContentLoaded", function() {
     var yearSpan = document.querySelector("#year span.highlight");
     if (yearSpan) {
-		yearSpan.textContent = getCurrentYear();
+        yearSpan.textContent = getCurrentYear();
     }
 });
-
 
 // Function to get the last modified date of the document
 document.addEventListener("DOMContentLoaded", function() {
@@ -27,9 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-
-// HAMBURGER MENU funciton //
-
+// HAMBURGER MENU function
 document.addEventListener('DOMContentLoaded', function() {
     const menuButton = document.getElementById('menu');
     const navigation = document.querySelector('nav .navigation');
@@ -40,11 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
-
-// OBEJCTS - Filtered MENU funciton //
-
-
+// OBJECTS Filtered MENU function
 document.addEventListener('DOMContentLoaded', () => {
     const trips = [
         {
@@ -106,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             name: "Niagara Falls Route",
             location: "Niagara, Ontario",
-            itinerary: "3 days",
+            itinerary: "4 days",
             description: "Where breathtaking natural wonders.",
             details: [
                 { day: "Day 1", description: "Iconic Falls and Local Exploration" },
@@ -142,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             name: "Bay of Fundy Route",
             location: "St. Andrews, New Brunswick",
-            itinerary: "3 days",
+            itinerary: "4 days",
             description: "Famous for having the highest tides in the world.",
             details: [
                 { day: "Day 1", description: "Arrival and Exploration" },
@@ -196,21 +188,24 @@ document.addEventListener('DOMContentLoaded', () => {
     renderCards(trips);
 
     // Filter functionality
-    document.getElementById('provinceFilter').addEventListener('change', (e) => {
-        const province = e.target.value;
-        const filteredTrips = province === 'all' ? trips : trips.filter(trip => trip.location.includes(province));
-        renderCards(filteredTrips);
-    });
+    function filterTrips() {
+        const provinceFilter = document.querySelector("#provinceFilter").value;
+        const durationFilter = document.querySelector("#durationFilter").value;
+        const typeFilter = document.querySelector("#typeFilter").value;
 
-    document.getElementById('durationFilter').addEventListener('change', (e) => {
-        const duration = e.target.value;
-        const filteredTrips = duration === 'all' ? trips : trips.filter(trip => parseInt(trip.itinerary) > 3);
-        renderCards(filteredTrips);
-    });
+        const filteredTrips = trips.filter(trip => {
+            const matchesProvince = provinceFilter === 'all' || trip.location.includes(provinceFilter);
+            const matchesDuration = durationFilter === 'all' || (durationFilter === 'morethan3days' && parseInt(trip.itinerary) > 3);
+            const matchesType = typeFilter === 'all' || trip.type === typeFilter;
 
-    document.getElementById('typeFilter').addEventListener('change', (e) => {
-        const type = e.target.value;
-        const filteredTrips = type === 'all' ? trips : trips.filter(trip => trip.type === type);
+            return matchesProvince && matchesDuration && matchesType;
+        });
+
         renderCards(filteredTrips);
-    });
+    }
+
+    // Add event listeners to the filters
+    document.querySelector("#provinceFilter").addEventListener("change", filterTrips);
+    document.querySelector("#durationFilter").addEventListener("change", filterTrips);
+    document.querySelector("#typeFilter").addEventListener("change", filterTrips);
 });

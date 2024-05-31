@@ -176,8 +176,8 @@ nav a {
     display: grid;
     grid-template-rows: 2fr 2fr 2fr;
     justify-content: center;
-    max-width: 390px;
-    margin: 0;
+    max-width: 100%;
+    margin: 0 40% 0 40%;
     padding: 40px;
     gap: 40px;
 }
