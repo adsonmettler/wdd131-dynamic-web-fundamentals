@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <h3>${trip.location}</h3>
                     <h4>${trip.description}</h4>
                     <h3>Itinerary: ${trip.itinerary}</h3>
-                    ${trip.details.map(detail => `<p>🗸 <span class="highlight">${detail.day}: </span>${detail.description}</p>`).join('')}
+                    ${trip.details.map(detail => `<p>✔ <span class="highlight">${detail.day}: </span>${detail.description}</p>`).join('')}
                     <h3>Accommodation Options</h3>
                     ${trip.accommodations.map(accommodation => `<p>📍 <span class="highlight">${accommodation.name}: </span>${accommodation.description}</p>`).join('')}
                 </div>
