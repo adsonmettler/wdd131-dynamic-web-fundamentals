@@ -4,7 +4,7 @@ The purpose of this project is to cover all learning process of Dynamic Web fund
 
 The course introduces responsive design using HTML, CSS, and JavaScript with attention to usability, accessibility, and best practices in web frontend development.
 
-*The final project
+# The final project
 
 I created a dynamic website for a tourism company.
 
