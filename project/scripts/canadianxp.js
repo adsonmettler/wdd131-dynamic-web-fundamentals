@@ -174,10 +174,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     ${trip.accommodations.map(accommodation => `<p>📍 <span class="highlight">${accommodation.name}: </span>${accommodation.description}</p>`).join('')}
                 </div>
                 <div>
-                    <a href="https://adsonmettler.github.io/wdd131/project/form.html" class="button-1">Start Booking</a>
+                    <a href="https://adsonmettler.github.io/wdd131-dynamic-web-fundamentals/project/form.html" class="button-1">Start Booking</a>
                 </div>
                 <div>
-                    <a href="https://adsonmettler.github.io/wdd131/project/trips.html" class="button-2">View More Trips</a>
+                    <a href="https://adsonmettler.github.io/wdd131-dynamic-web-fundamentals/project/trips.html" class="button-2">View More Trips</a>
                 </div>
             `;
 
